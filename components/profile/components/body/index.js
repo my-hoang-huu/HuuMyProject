@@ -12,9 +12,9 @@ import {
 
 function Story() {
   return (
-    <TouchableHighlight style={styles.story}>
+    <TouchableOpacity style={styles.story}>
       <Image style={styles.storyImage} />
-    </TouchableHighlight>
+    </TouchableOpacity>
   );
 }
 
@@ -27,9 +27,9 @@ const Body = () => {
           onPress={() => alert('hi')}>
           <Text style={styles.textButton}>Post</Text>
         </TouchableOpacity>
-        <TouchableHighlight style={styles.middleButton}>
+        <TouchableOpacity style={styles.middleButton}>
           <Text style={styles.textButton}>Static</Text>
-        </TouchableHighlight>
+        </TouchableOpacity>
       </View>
       <View height={20} />
 

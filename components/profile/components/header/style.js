@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-const profileRadius = 140;
+const profileRadius = 150;
 
 const styles = StyleSheet.create({
   header: {
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
   profileName: {
+    marginTop: 14,
     fontSize: 24,
     fontWeight: 'bold',
   },

@@ -27,11 +27,13 @@ const styles = StyleSheet.create({
     // backgroundColor: 'red',
     marginTop: 40,
   },
-
   postText: {
-    marginBottom: 20,
+    // marginBottom: 20,
     marginLeft: '2%',
     fontWeight: '500',
+  },
+  postBody: {
+    marginVertical: 20,
   },
 });
 
