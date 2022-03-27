@@ -24,16 +24,18 @@ const styles = StyleSheet.create({
   },
   // Post
   post: {
-    // backgroundColor: 'red',
-    marginTop: 40,
+    backgroundColor: '#CCC8C8',
+    marginTop: 30,
+    paddingVertical: 10,
+    borderRadius: 10,
   },
   postText: {
-    // marginBottom: 20,
+    marginBottom: 10,
     marginLeft: '2%',
     fontWeight: '500',
   },
   postBody: {
-    marginVertical: 20,
+    marginVertical: 10,
   },
 });
 

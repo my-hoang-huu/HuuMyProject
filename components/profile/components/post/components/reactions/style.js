@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   postReact: {
     marginHorizontal: '2%',
-    marginBottom: 20,
+    // marginBottom: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',

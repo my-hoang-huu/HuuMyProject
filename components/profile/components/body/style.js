@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   textButton: {
     fontSize: 16,
     fontWeight: 'bold',
+    color: '#E0DDDD',
   },
 
   label: {
