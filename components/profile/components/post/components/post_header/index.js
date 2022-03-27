@@ -13,19 +13,6 @@ class PostThreeDots extends React.Component {
     };
   }
 
-  functionOne() {
-    this.setState({isActive: !this.state.isActive});
-  }
-
-  functionTwo() {
-    alert(this.state.isActive);
-  }
-
-  functionCombined() {
-    this.functionOne();
-    this.functionTwo();
-  }
-
   render() {
     let popupRef = React.createRef();
     return (
