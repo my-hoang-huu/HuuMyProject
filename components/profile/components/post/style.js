@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   // Post
   post: {
     backgroundColor: '#CCC8C8',
-    marginTop: 30,
+    marginTop: 10,
     paddingVertical: 10,
     borderRadius: 10,
   },
