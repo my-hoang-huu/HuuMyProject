@@ -4,6 +4,7 @@ components: Directory containing all the components.
 
 
 **1.	Directory structure**
+
 _Include the following notable files and folders:_
 
 •	Contains folder: Contains shared data for the app (colors, ...)
@@ -33,45 +34,42 @@ _Include the following notable files and folders:_
 
 
 **2.	 Libraries and techniques used**
+
    "react-navigation": "^4.4.4,",
    "react-native-screens": "^3.13.1",
-   
-=> Use navigation functions
+    => Use navigation functions
 
    "@react-navigation/bottom-tabs": "^6.2.0",
    "@react-navigation/native": "^6.0.8",
-   
-=> Build Bottom Tabs Navigator
+    => Build Bottom Tabs Navigator
+
 
    "@react-navigation/native-stack": "^6.5.2",
    "@react-navigation/stack": "^6.1.1",
    "react-native-gesture-handler": "^2.3.2",
    
-=> Build navigation from profile page to subpages
+    => Build navigation from profile page to subpages
 
-  "react-native-paper": "^4.11.2",
-  
-=> Build buttons
+
+  "react-native-paper": "^4.11.2"
+    => Build buttons
 
   "react-native-safe-area-context": "^4.2.2",
   "react-native-svg": "^12.3.0",
-  
-=> Use svg files
+    => Use svg files
 
   "react-native-vector-icons": "^9.1.
-  
-=> Use the icon library
+    => Use the icon library
 
   "react-native-webview": "^11.17.2",
   "react-native-youtube-iframe": "^2.2.2",
-  
-=> Embed video
+    => Embed video
 
-    "react-timer-mixin": "^0.13.4"
-    
-=> Set timer: not used in the app
+    "react-timer-mixin": "^0.13.4" 
+    => Set timer: not used in the app
 
 **Other techniques:**
+
 - Use Modal component, setState function, and React.createRef() to create floating bottom menu when clicking on avatar, cover picture or post information icon (details in file floating_menu/index.js and class PostThreeDots in file post_header/index.js.
 
 - Use Map function to create a list of stories in the body
@@ -82,5 +80,6 @@ _Include the following notable files and folders:_
 
 
 **3.	When building the app**
+
 After cloning, run npm install command to build the app.
 Note: App has only been tested on android phones.
