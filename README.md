@@ -83,6 +83,6 @@ _Include the following notable files and folders:_
 **3.	When building the app**
 
 
-After cloning, run "npm install" command to build the app.
+After cloning, run "npm install" command before building the app.
 
 Note: The app has only been tested on android phone.
