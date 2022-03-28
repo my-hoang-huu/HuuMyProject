@@ -1,6 +1,5 @@
 # HuuMyProject
 
-components: Directory containing all the components.
 
 
 **1.	Directory structure**
