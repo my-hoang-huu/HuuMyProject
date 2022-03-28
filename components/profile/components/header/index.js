@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import styles from './style';
 import HeaderFloatingMenu from './components/floating_menu/index.js';
@@ -52,11 +53,13 @@ class CoverImage extends React.Component {
   }
 }
 
-const Header = () => {
+const Header = props => {
   return (
     <View style={styles.header}>
       <CoverImage />
-      <TouchableOpacity style={styles.settingIcon}>
+      <TouchableOpacity
+        onPress={() => props.navigate('Settings')}
+        style={styles.settingIcon}>
         <AntDesign name="setting" size={24} color="white" />
       </TouchableOpacity>
       <ProfileImage />

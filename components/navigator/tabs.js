@@ -1,12 +1,13 @@
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import ProfileScreen from './../profile/screen.js';
+// import ProfileScreen from './../profile/screen.js';
 import HomeScreen from './../home/screen.js';
 import GroupScreen from './../group/screen.js';
 import WalletScreen from './../wallet/screen.js';
 import MessageScreen from './../message/screen.js';
 import {View, Image} from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
+import ProfileStack from './profile_stack.js';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +23,7 @@ function Tabs() {
           // tabBarInactiveTintColor: 'grey',
         },
       }}
-      initialRouteName={'Profile'}>
+      initialRouteName={'ProfileStack'}>
       <Tab.Screen
         options={{
           tabBarIcon: ({focused}) => {
@@ -99,8 +100,8 @@ function Tabs() {
             );
           },
         }}
-        name="Profile"
-        component={ProfileScreen}
+        name="ProfileStack"
+        component={ProfileStack}
       />
     </Tab.Navigator>
   );
