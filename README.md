@@ -48,7 +48,7 @@ _Include the following notable files and folders:_
    "@react-navigation/stack": "^6.1.1",
    "react-native-gesture-handler": "^2.3.2",
    
-    => Build navigation from profile page to subpages
+ => Build navigation from profile page to subpages
 
 
   "react-native-paper": "^4.11.2"
@@ -65,7 +65,7 @@ _Include the following notable files and folders:_
   "react-native-youtube-iframe": "^2.2.2",
     => Embed video
 
-    "react-timer-mixin": "^0.13.4" 
+  "react-timer-mixin": "^0.13.4" 
     => Set timer: not used in the app
 
 **Other techniques:**
