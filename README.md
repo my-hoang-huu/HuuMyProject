@@ -68,15 +68,15 @@ _Include the following notable files and folders:_
   "react-timer-mixin": "^0.13.4" 
     => Set timer: not used in the app
 
-**Other techniques:**
+    **Other techniques:**
 
-- Use Modal component, setState function, and React.createRef() to create floating bottom menu when clicking on avatar, cover picture or post information icon (details in file floating_menu/index.js and class PostThreeDots in file post_header/index.js.
+    - Use Modal component, setState function, and React.createRef() to create floating bottom menu when clicking on avatar, cover picture or post information icon (details in file floating_menu/index.js and class PostThreeDots in file post_header/index.js.
 
-- Use Map function to create a list of stories in the body
+    - Use Map function to create a list of stories in the body
 
-- Use useState function to change the state of post-reaction icons
+    - Use useState function to change the state of post-reaction icons
 
-- Use setState via class component to change the state of navbar bottom icons
+    - Use setState via class component to change the state of navbar bottom icons
 
 
 **3.	When building the app**
