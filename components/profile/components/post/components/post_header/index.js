@@ -18,7 +18,6 @@ class PostThreeDots extends React.Component {
     return (
       <View>
         <TouchableOpacity
-          // onPress={() => this.setState({isActive: !this.state.isActive})}
           onPress={() => popupRef.show()}
           style={[styles.dotsIcon]}>
           <Entypo name="dots-three-horizontal" size={20} color="black" />
