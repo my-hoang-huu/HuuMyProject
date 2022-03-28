@@ -19,7 +19,7 @@ _Include the following notable files and folders:_
       Contains the components that make up the profile page, include
       + header: includes cover image, avatar, use name
       + body: includes post, status buttons,
-      + post: post content
+      + post: post contents
 
      * Global folder
       Contains shared components for the app
