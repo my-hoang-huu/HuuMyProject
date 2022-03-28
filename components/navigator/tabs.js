@@ -1,6 +1,7 @@
+import 'react-native-gesture-handler';
+
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-// import ProfileScreen from './../profile/screen.js';
 import HomeScreen from './../home/screen.js';
 import GroupScreen from './../group/screen.js';
 import WalletScreen from './../wallet/screen.js';
