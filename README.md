@@ -54,7 +54,6 @@ _Include the following notable files and folders:_
   "react-native-paper": "^4.11.2"
     => Build buttons
 
-  "react-native-safe-area-context": "^4.2.2",
   "react-native-svg": "^12.3.0",
     => Use svg files
 
