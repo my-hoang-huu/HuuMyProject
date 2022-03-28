@@ -7,7 +7,9 @@ components: Directory containing all the components.
 _Include the following notable files and folders:_
 
 •	Contains folder: Contains shared data for the app (colors, ...)
+
 •	Assets folder: Contains assets used in the app, currently has an images folder containing image files.
+
 •	App.js file: Program executable file
 
 •	Components folder: 
@@ -63,8 +65,11 @@ _Include the following notable files and folders:_
 
 **Other techniques:**
 - Use Modal component, setState function, and React.createRef() to create floating bottom menu when clicking on avatar, cover picture or post information icon (details in file floating_menu/index.js and class PostThreeDots in file post_header/index.js.
+
 - Use Map function to create a list of stories in the body
-- Use useState function to change the state of post-reaction icons.
+
+- Use useState function to change the state of post-reaction icons
+
 - Use setState via class component to change the state of navbar bottom icons
 
 
