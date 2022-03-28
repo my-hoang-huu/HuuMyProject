@@ -1,8 +1,16 @@
 import React from 'react';
 import styles from './style';
 import Story from './components/story.js';
-
 import {TouchableOpacity, ScrollView, Text, View} from 'react-native';
+
+const images = [
+  {image: require('../../../../assets/images/stories/thumb-card3.png')},
+  {image: require('../../../../assets/images/stories/thumb-card4.png')},
+  {image: require('../../../../assets/images/stories/thumb-card5.png')},
+  {image: require('../../../../assets/images/stories/thumb-card6.png')},
+  {image: require('../../../../assets/images/stories/thumb-card7.png')},
+  {image: require('../../../../assets/images/stories/thumb-card8.png')},
+];
 
 const Body = props => {
   return (
@@ -20,21 +28,15 @@ const Body = props => {
         </TouchableOpacity>
       </View>
       <View height={20} />
-
       <Text style={styles.label}>Stories</Text>
       <ScrollView
         horizontal={true}
         showsHorizontalScrollIndicator={false}
         style={styles.storiesScroll}>
         <View style={styles.stories}>
-          <Story navigate={props.navigate} />
-          <Story navigate={props.navigate} />
-          <Story navigate={props.navigate} />
-          <Story navigate={props.navigate} />
-          <Story navigate={props.navigate} />
-          <Story navigate={props.navigate} />
-          <Story navigate={props.navigate} />
-          <Story navigate={props.navigate} />
+          {images.map((item, index) => (
+            <Story key={index} navigate={props.navigate} image={item.image} />
+          ))}
         </View>
       </ScrollView>
     </View>

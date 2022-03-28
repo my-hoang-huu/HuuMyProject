@@ -3,6 +3,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import styles from './style.js';
 import {TouchableOpacity, Text, View} from 'react-native';
+import color from './../../../../../../contains/colors';
 
 function Vote(props) {
   const [isActive, setNumber] = useState(false);
@@ -15,13 +16,16 @@ function Vote(props) {
     <View style={styles.reactItem}>
       <TouchableOpacity
         onPress={activePress}
-        style={[styles.voteButton, styles.reactButton]}>
+        style={[
+          styles.voteButton,
+          isActive ? styles.reactButtonActive : styles.reactButton,
+        ]}>
         <Text
           style={
             isActive
               ? {
                   fontWeight: 'bold',
-                  color: 'red',
+                  color: color.activeColor,
                 }
               : {
                   fontWeight: 'normal',
@@ -47,9 +51,9 @@ function Favorite(props) {
   };
   const number = isActive ? props.number + 1 : props.number;
   const heartIcon = isActive ? (
-    <AntDesign name="heart" size={28} color="red" />
+    <AntDesign name="heart" size={28} color={color.activeColor} />
   ) : (
-    <AntDesign name="hearto" size={28} color="#BDB9B9" />
+    <AntDesign name="hearto" size={28} color={color.blackLightColor} />
   );
   return (
     <View style={styles.reactItem}>
@@ -70,10 +74,10 @@ function Tag(props) {
   const activePress = () => {
     setNumber(!isActive);
   };
-  const color = isActive ? 'red' : '#D3CFCF';
+  const thisColor = isActive ? color.activeColor : color.testColor;
   return (
     <TouchableOpacity onPress={activePress} style={styles.tagIcon}>
-      <Fontisto name="favorite" size={36} color={color} />
+      <Fontisto name="favorite" size={36} color={thisColor} />
     </TouchableOpacity>
   );
 }
@@ -88,7 +92,7 @@ const Reactions = props => {
           <TouchableOpacity
             onPress={() => props.navigate('Comments')}
             style={styles.commentButton}>
-            <Fontisto name="comment" size={26} color="#BDB9B9" />
+            <Fontisto name="comment" size={26} color={color.blackLightColor} />
             <Text style={styles.commentNumber}>432</Text>
           </TouchableOpacity>
         </View>

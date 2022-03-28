@@ -1,4 +1,6 @@
 import {StyleSheet} from 'react-native';
+import color from '../../../../contains/colors.js';
+
 const profileRadius = 150;
 
 const styles = StyleSheet.create({
@@ -35,6 +37,7 @@ const styles = StyleSheet.create({
     marginTop: 14,
     fontSize: 24,
     fontWeight: 'bold',
+    color: color.blackColor,
   },
   userName: {
     fontSize: 18,

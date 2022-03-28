@@ -8,6 +8,7 @@ import MessageScreen from './../message/screen.js';
 import {View, Image} from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import ProfileStack from './profile_stack.js';
+import color from './../../contains/colors';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,12 +16,13 @@ function Tabs() {
   return (
     <Tab.Navigator
       screenOptions={{
+        cardStyle: {backgroundColor: 'red'},
         tabBarShowLabel: false,
         tabBarStyle: {
           height: 70,
-          backgroundColor: '#797676',
-          // tabBarActiveTintColor: 'red',
-          // tabBarInactiveTintColor: 'grey',
+          backgroundColor: color.backgroundColor,
+          tabBarActiveTintColor: 'red',
+          tabBarInactiveTintColor: 'grey',
         },
       }}
       initialRouteName={'ProfileStack'}>
@@ -28,10 +30,10 @@ function Tabs() {
         options={{
           tabBarIcon: ({focused}) => {
             const size = focused ? 40 : 30;
-            const color = focused ? '#E0D429' : 'grey';
+            const iconColor = focused ? color.yellowColor : 'grey';
             return (
               <View>
-                <Entypo name="chat" size={size} color={color} />
+                <Entypo name="chat" size={size} color={iconColor} />
               </View>
             );
           },
@@ -43,10 +45,10 @@ function Tabs() {
         options={{
           tabBarIcon: ({focused}) => {
             const size = focused ? 40 : 30;
-            const color = focused ? '#E0D429' : 'grey';
+            const iconColor = focused ? color.yellowColor : 'grey';
             return (
               <View>
-                <Entypo name="users" size={size} color={color} />
+                <Entypo name="users" size={size} color={iconColor} />
               </View>
             );
           },
@@ -76,10 +78,10 @@ function Tabs() {
         options={{
           tabBarIcon: ({focused}) => {
             const size = focused ? 40 : 30;
-            const color = focused ? '#E0D429' : 'grey';
+            const iconColor = focused ? color.yellowColor : 'grey';
             return (
               <View>
-                <Entypo name="wallet" size={size} color={color} />
+                <Entypo name="wallet" size={size} color={iconColor} />
               </View>
             );
           },
@@ -92,10 +94,10 @@ function Tabs() {
           headerShown: false,
           tabBarIcon: ({focused}) => {
             const size = focused ? 40 : 30;
-            const color = focused ? '#E0D429' : 'grey';
+            const iconColor = focused ? color.yellowColor : 'grey';
             return (
               <View>
-                <Entypo name="user" size={size} color={color} />
+                <Entypo name="user" size={size} color={iconColor} />
               </View>
             );
           },

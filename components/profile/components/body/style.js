@@ -13,15 +13,15 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginHorizontal: '3%',
     marginBottom: 20,
-    marginTop: 20,
+    marginTop: 18,
     alignItems: 'center',
-    backgroundColor: '#A19F9F',
+    backgroundColor: color.buttonColor,
   },
 
   textButton: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#E0DDDD',
+    color: color.primaryColor,
   },
 
   label: {

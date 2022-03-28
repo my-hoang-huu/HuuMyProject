@@ -1,9 +1,8 @@
 import {StyleSheet} from 'react-native';
-// import color from '../../../../contains/colors.js';
+import color from '../../../../contains/colors.js';
 
 const mainStyles = StyleSheet.create({
-  backgroundStyle: {color: '#212629'},
-
+  backgroundStyle: {color: color.backgroundColor},
   label: {
     fontWeight: 'bold',
     fontSize: 16,

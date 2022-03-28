@@ -1,9 +1,14 @@
 import {StyleSheet} from 'react-native';
+import color from './../../../../../../contains/colors';
 
 const styles = StyleSheet.create({
   //react
   reactButton: {
     marginRight: '6%',
+  },
+  reactButtonActive: {
+    marginRight: '6%',
+    borderColor: color.activeColor,
   },
   postReact: {
     marginHorizontal: '2%',
@@ -22,7 +27,7 @@ const styles = StyleSheet.create({
   },
   voteButton: {
     borderWidth: 1,
-    borderColor: 'grey',
+    // borderColor: color.blackColor,
     paddingVertical: 11,
     borderRadius: 6,
     width: 70,
