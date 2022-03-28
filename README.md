@@ -72,7 +72,7 @@ _Include the following notable files and folders:_
 
     - Use Modal component, setState function, and React.createRef() to create floating bottom menu when clicking on avatar, cover picture or post information icon
     
-    (details in file floating_menu/index.js and class PostThreeDots in file post_header/index.js.
+        (details in file floating_menu/index.js and class PostThreeDots in file post_header/index.js.
 
     - Use Map function to create a list of stories in the body
 
