@@ -50,6 +50,7 @@ _Include the following notable files and folders:_
  => Build navigation from profile page to subpages
 
 
+
   "react-native-paper": "^4.11.2"
     => Build buttons
 
