@@ -1,7 +1,7 @@
 import React from 'react';
 import YoutubePlayer from 'react-native-youtube-iframe';
 import styles from './style.js';
-import {Text, View, Dimensions, TouchableOpacity} from 'react-native';
+import {Text, View, Dimensions} from 'react-native';
 import Reactions from './components/reactions/index.js';
 import PostHeader from './components/post_header/index.js';
 

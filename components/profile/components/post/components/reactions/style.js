@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
   },
   postReact: {
     marginHorizontal: '2%',
-    // marginBottom: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -27,11 +26,18 @@ const styles = StyleSheet.create({
   },
   voteButton: {
     borderWidth: 1,
-    // borderColor: color.blackColor,
     paddingVertical: 11,
     borderRadius: 6,
     width: 70,
     alignItems: 'center',
+  },
+  textButtonActive: {
+    fontWeight: 'bold',
+    color: color.activeColor,
+  },
+  textButton: {
+    fontWeight: 'normal',
+    color: 'gray',
   },
   voteNumber: {},
   commentButton: {

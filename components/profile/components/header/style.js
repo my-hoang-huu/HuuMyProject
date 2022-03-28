@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
   },
   userName: {
     fontSize: 18,
-    // fontWeight: 'bold',
   },
 });
 

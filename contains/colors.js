@@ -6,7 +6,6 @@ const color = {
   blackColor: '#080808',
   blackLightColor: '#807E7E',
   activeColor: '#FA5B60',
-  // activeColor: '#F7A2A5',
   heartColor: '#F70808',
   yellowColor: '#DADD07',
 };
