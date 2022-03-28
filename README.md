@@ -82,6 +82,6 @@ _Include the following notable files and folders:_
 **3.	When building the app**
 
 
-After cloning, run npm install command to build the app.
+After cloning, run "npm install" command to build the app.
 
-Note: App has only been tested on android phones.
+Note: The app has only been tested on android phone.
