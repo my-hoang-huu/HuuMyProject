@@ -35,32 +35,40 @@ _Include the following notable files and folders:_
 **2.	 Libraries and techniques used**
    "react-navigation": "^4.4.4,",
    "react-native-screens": "^3.13.1",
+   
 => Use navigation functions
 
    "@react-navigation/bottom-tabs": "^6.2.0",
    "@react-navigation/native": "^6.0.8",
+   
 => Build Bottom Tabs Navigator
 
    "@react-navigation/native-stack": "^6.5.2",
    "@react-navigation/stack": "^6.1.1",
    "react-native-gesture-handler": "^2.3.2",
+   
 => Build navigation from profile page to subpages
 
   "react-native-paper": "^4.11.2",
+  
 => Build buttons
 
   "react-native-safe-area-context": "^4.2.2",
   "react-native-svg": "^12.3.0",
+  
 => Use svg files
 
   "react-native-vector-icons": "^9.1.
+  
 => Use the icon library
 
   "react-native-webview": "^11.17.2",
   "react-native-youtube-iframe": "^2.2.2",
+  
 => Embed video
 
     "react-timer-mixin": "^0.13.4"
+    
 => Set timer: not used in the app
 
 **Other techniques:**
