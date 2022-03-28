@@ -8,6 +8,8 @@ import StaticScreen from './../profile/sub_screens/static.js';
 import CommentsScreen from './../profile/sub_screens/comment.js';
 import StoryScreen from './../profile/sub_screens/story.js';
 import SettingsScreen from './../profile/sub_screens/setting.js';
+import VoteListScreen from './../profile/sub_screens/vote_list.js';
+import FavoriteListScreen from './../profile/sub_screens/favorite_list';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +25,8 @@ function ProfileStack() {
       <Stack.Screen name="Post" component={PostScreen} />
       <Stack.Screen name="Static" component={StaticScreen} />
       <Stack.Screen name="Comments" component={CommentsScreen} />
+      <Stack.Screen name="VoteList" component={VoteListScreen} />
+      <Stack.Screen name="FavoriteList" component={FavoriteListScreen} />
       <Stack.Screen name="Story" component={StoryScreen} />
     </Stack.Navigator>
   );

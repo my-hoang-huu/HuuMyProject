@@ -37,7 +37,7 @@ function Vote(props) {
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.voteNumber}
-        onPress={() => alert(isActive)}>
+        onPress={() => props.navigate('VoteList')}>
         <Text>{number}</Text>
       </TouchableOpacity>
     </View>
@@ -62,7 +62,9 @@ function Favorite(props) {
         style={[styles.heartButton, styles.reactButton]}>
         {heartIcon}
       </TouchableOpacity>
-      <TouchableOpacity style={styles.heartNumber}>
+      <TouchableOpacity
+        onPress={() => props.navigate('FavoriteList')}
+        style={styles.heartNumber}>
         <Text>{number}</Text>
       </TouchableOpacity>
     </View>
@@ -86,8 +88,8 @@ const Reactions = props => {
   return (
     <View style={styles.postReact}>
       <View style={styles.leftGroup}>
-        <Vote number={443} />
-        <Favorite number={243} />
+        <Vote number={443} navigate={props.navigate} />
+        <Favorite number={243} navigate={props.navigate} />
         <View style={styles.reactItem}>
           <TouchableOpacity
             onPress={() => props.navigate('Comments')}
