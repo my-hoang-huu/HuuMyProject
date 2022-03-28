@@ -29,9 +29,9 @@ class PostThreeDots extends React.Component {
   }
 }
 
-function PostHeader() {
+function PostHeader(props) {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => props.navigate('Comments')}>
       <View style={styles.postHeader}>
         <View style={[styles.postUser]}>
           <Image

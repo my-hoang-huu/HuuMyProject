@@ -22,8 +22,9 @@ const styles = StyleSheet.create({
   settingIcon: {
     zIndex: 4,
     position: 'absolute',
-    right: 20,
-    top: 40,
+    right: 0,
+    top: 20,
+    padding: 20,
   },
   profileImage: {
     width: profileRadius - 6,

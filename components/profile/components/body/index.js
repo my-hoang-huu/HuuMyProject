@@ -1,33 +1,21 @@
 import React from 'react';
 import styles from './style';
+import Story from './components/story.js';
 
-import {
-  TouchableOpacity,
-  TouchableHighlight,
-  ScrollView,
-  Image,
-  Text,
-  View,
-} from 'react-native';
+import {TouchableOpacity, ScrollView, Text, View} from 'react-native';
 
-function Story() {
-  return (
-    <TouchableOpacity style={styles.story}>
-      <Image style={styles.storyImage} />
-    </TouchableOpacity>
-  );
-}
-
-const Body = () => {
+const Body = props => {
   return (
     <View style={styles.body}>
       <View style={styles.middleButtons}>
         <TouchableOpacity
-          style={styles.middleButton}
-          onPress={() => alert('hi')}>
+          onPress={() => props.navigate('Post')}
+          style={styles.middleButton}>
           <Text style={styles.textButton}>Post</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.middleButton}>
+        <TouchableOpacity
+          onPress={() => props.navigate('Static')}
+          style={styles.middleButton}>
           <Text style={styles.textButton}>Static</Text>
         </TouchableOpacity>
       </View>
@@ -39,12 +27,14 @@ const Body = () => {
         showsHorizontalScrollIndicator={false}
         style={styles.storiesScroll}>
         <View style={styles.stories}>
-          <Story />
-          <Story />
-          <Story />
-          <Story />
-          <Story />
-          <Story />
+          <Story navigate={props.navigate} />
+          <Story navigate={props.navigate} />
+          <Story navigate={props.navigate} />
+          <Story navigate={props.navigate} />
+          <Story navigate={props.navigate} />
+          <Story navigate={props.navigate} />
+          <Story navigate={props.navigate} />
+          <Story navigate={props.navigate} />
         </View>
       </ScrollView>
     </View>

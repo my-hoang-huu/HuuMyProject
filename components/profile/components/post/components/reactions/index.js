@@ -78,14 +78,16 @@ function Tag(props) {
   );
 }
 
-const Reactions = () => {
+const Reactions = props => {
   return (
     <View style={styles.postReact}>
       <View style={styles.leftGroup}>
         <Vote number={443} />
         <Favorite number={243} />
         <View style={styles.reactItem}>
-          <TouchableOpacity style={styles.commentButton}>
+          <TouchableOpacity
+            onPress={() => props.navigate('Comments')}
+            style={styles.commentButton}>
             <Fontisto name="comment" size={26} color="#BDB9B9" />
             <Text style={styles.commentNumber}>432</Text>
           </TouchableOpacity>
