@@ -76,6 +76,8 @@ _Include the following notable files and folders:_
     - Use Map function to create a list of stories in the body
 
     - Use useState function to change the state of post-reaction icons
+    
+    - Used "props" parameters to provide properties to components 
 
 
 
