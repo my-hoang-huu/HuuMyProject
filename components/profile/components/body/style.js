@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
   middleButtons: {
     flexDirection: 'row',
     flex: 1,
-    // backgroundColor: colorCustom.heartColor,
   },
   middleButton: {
     flex: 1,
@@ -42,13 +41,8 @@ const styles = StyleSheet.create({
     height: 140,
     backgroundColor: '#AC9680',
   },
-  // body: {},
   body: {
     marginHorizontal: '1%',
-    // flex: 1,
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    // backgroundColor: Colors.red,
   },
 });
 

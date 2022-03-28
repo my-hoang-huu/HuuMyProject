@@ -1,48 +1,15 @@
 import React from 'react';
-import Entypo from 'react-native-vector-icons/Entypo';
 import styles from './style.js';
-import {TouchableOpacity, Image, Text, View} from 'react-native';
-// import PostFloatingMenu from './../../../header/components/floating_menu/index.js';
-import PostFloatingMenu from './../floating_menu/index.js';
-
-class PostThreeDots extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isActive: true,
-    };
-  }
-
-  render() {
-    let popupRef = React.createRef();
-    return (
-      <View>
-        <TouchableOpacity
-          onPress={() => popupRef.show()}
-          style={[styles.dotsIcon]}>
-          <Entypo name="dots-three-horizontal" size={20} color="black" />
-        </TouchableOpacity>
-        <PostFloatingMenu ref={target => (popupRef = target)} />
-      </View>
-    );
-  }
-}
+import {TouchableOpacity, View, Image, Text} from 'react-native';
+import ThreeDotsIcon from './components/threeDotsIcon.js';
+import User from './components/user.js';
 
 function PostHeader(props) {
   return (
     <TouchableOpacity onPress={() => props.navigate('Comments')}>
       <View style={styles.postHeader}>
-        <View style={[styles.postUser]}>
-          <Image
-            style={styles.postProfileImg}
-            source={require('../../../../../../assets/images/profileImg.jpg')}
-          />
-          <View>
-            <Text style={styles.label}>Profile name</Text>
-            <Text>@Username</Text>
-          </View>
-        </View>
-        <PostThreeDots />
+        <User />
+        <ThreeDotsIcon />
       </View>
     </TouchableOpacity>
   );
