@@ -11,7 +11,8 @@ _Include the following notable files and folders:_
 •	App.js file: Program executable file
 
 •	Components folder: 
-    Contains all the components that build the app, contains:
+    Contains all the components that build the app:    
+    
      * Profile folder 
       Contains the components that make up the profile page, include
       + header: includes cover image, avatar, use name
