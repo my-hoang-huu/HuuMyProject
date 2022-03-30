@@ -8,7 +8,13 @@ function Story(props) {
     <TouchableOpacity
       onPress={() => props.navigate('Story')}
       style={styles.story}>
-      <Image source={props.image} style={styles.storyImage} />
+      {/* <Image source={props.image} style={styles.storyImage} /> */}
+      <Image
+        source={{
+          uri: props.image,
+        }}
+        style={styles.storyImage}
+      />
     </TouchableOpacity>
   );
 }
