@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './style';
 import {Text, View} from 'react-native';
 import NavButton from './components/button.js';
-import Stories from './components/list_stories.js';
+import Stories from './components/storyList.js';
 
 const Body = props => {
   return (
