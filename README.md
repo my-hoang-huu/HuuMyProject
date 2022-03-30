@@ -73,7 +73,7 @@ _Include the following notable files and folders:_
     
         (details in file floating_menu/index.js and class PostThreeDots in file post_header/index.js.
 
-    - Use Map function to create a list of stories in the body
+    - Integration API to create a list of stories in the body part
 
     - Use useState function to change the state of post-reaction icons
     
